@@ -1,0 +1,4 @@
+*.class
+*.log
+.stats_cache*
+.DS_Store

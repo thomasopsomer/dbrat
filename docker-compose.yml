@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  brat:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    volumes:
+      - ${BRAT_DATA_DIR}:/brat-v1.3_Crunchy_Frog/data
+      - ${BRAT_WORK_DIR}:/brat-v1.3_Crunchy_Frog/work
+    ports:
+      - "${BRAT_PORT}:8001"
